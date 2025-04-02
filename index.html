@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este site é o trabalho do Christiano">
+    <meta name="keywords" content="Trabalho, Projeto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Projeto</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Rounded:wght@400;500&display=swap');
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1, h2, h3, p {
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        h1 {
+            font-size: 33.33px;
+            margin: 0;
+            padding: 0 20px;
+        }
+        
+        h2 {
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 60px;
+            margin-top: 120px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            text-align: center;
+            color: #808080;
+        }
+        
+        h3 {
+            font-size: 30px;
+            margin: 30px 0 15px 20px;
+            text-align: left;
+        }
+
+        .titulo-produtos {
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            color: #808080;
+            text-align: center;
+            margin: 40px 0 25px 0;
+            letter-spacing: 0.5px;
+        }
+        
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            padding: 0 20px;
+            text-align: justify;
+            color: #000000;
+        }
+
+        .top-left-img {
+            position: absolute;
+            left: 20px;
+            width: 60px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            text-align: center;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product-item img {
+            border-radius: 15px;
+            width: 200px;
+            height: 130px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .product-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .product-label {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .espaço{
+            height: 15vh;
+            background-color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img class="top-left-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOwIt0zvyXu-XwrEFOHkZBXJyGXpMyEzYBSg&s" alt="Logo">
+        <h1>APPLE</h1>
+    </div>
+
+    <h2>Sobre nós</h2>
+    
+    <div class="espaço"></div>
+
+    <h3>História da Apple</h3>
+    <p>Fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne, a Apple começou na garagem dos Jobs com o Apple I. O Apple II (1977) foi um dos primeiros PCs de sucesso, e o Macintosh (1984) revolucionou a computação com interface gráfica. Após anos de crise e a saída de Jobs, sua volta em 1997 revitalizou a empresa. Sob sua liderança, a Apple lançou o iMac (1998), o iPod (2001), o iPhone (2007) — que transformou a indústria mobile — e o iPad (2010). Hoje, é uma das empresas mais valiosas do mundo, conhecida por inovação, design e um ecossistema integrado.</p>
+
+    <h3>Nossa Filosofia</h3>
+    <p>Imagine um mundo onde a tecnologia se conecta perfeitamente à sua vida, tornando cada momento mais simples, criativo e poderoso. Hoje, apresentamos a harmonia perfeita entre inovação e design: o Mac, com sua performance incomparável; o iPhone, revolucionando a maneira como nos comunicamos; o iPad, reinventando a produtividade e a diversão; e o Apple Watch, seu companheiro essencial para saúde e conectividade. Juntos, eles criam uma experiência única, elevando o que a tecnologia pode fazer por você. Esta é a Apple. Este é o futuro.</p>
+
+    <div class="espaço"></div>
+
+    <div class="titulo-produtos">Veja nossos produtos</div>
+
+    <div class="espaço"></div>
+
+    <div class="product-container">
+        <div class="product-item">
+            <a href="https://www.apple.com/br/shop/buy-mac" target="_blank"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-mac-nav-202503?wid=400&hei=260&fmt=png-alpha&.v=1739502780055"></a>
+            <div class="product-label">Mac</div>
+        </div>
+        <div class="product-item">
+            <a href="https://www.apple.com/br/shop/buy-iphone" target="_blank"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202502?wid=400&hei=260&fmt=png-alpha&.v=1738706422726"></a>
+            <div class="product-label">iPhone</div>
+        </div>
+        <div class="product-item">
+            <a href="https://www.apple.com/br/shop/buy-ipad" target="_blank"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=1714168620875"></a>
+            <div class="product-label">iPad</div>
+        </div>
+        <div class="product-item">
+            <a href="https://www.apple.com/br/shop/buy-watch" target="_blank"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1724165625838"></a>
+            <div class="product-label">Apple Watch</div>
+        </div>
+    </div>
+
+    <div class="espaço"></div>
+    <footer>© Todos os direitos reservados - Christiano Ronaldo - 2025</footer>
+</body>
+</html>
+
